@@ -1,16 +1,10 @@
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-from typing import List
 
-
-class Fruit(BaseModel):
-    name: str
-
-
-class Fruits(BaseModel):
-    fruits: List[Fruit]
+from core.database import init_db
+# from core.models import ChatMessage
+from api.models import Fruits, Fruit
 
 
 app = FastAPI(debug=True)
