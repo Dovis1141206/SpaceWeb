@@ -7,6 +7,9 @@ log/*
 # MacOS
 .DS_Store
 
+# temp
+temp/
+
 
 .vscode
 .vscode-server
