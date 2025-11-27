@@ -11,6 +11,7 @@ app = FastAPI(debug=True)
 
 origins = [
     "http://localhost:5173",
+    "https://spaceweb.dovis.dev",
     # more origins
 ]
 
